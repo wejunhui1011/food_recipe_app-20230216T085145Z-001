@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
   bool isLoading = true;
   List<RecipeModel> recipeList = <RecipeModel>[];
   TextEditingController searchController = new TextEditingController();
-  List reciptCatList = [{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"}];
+  List reciptCatList = [{"imgUrl": "https://www.bing.com/images/search?view=detailV2&ccid=H6LkUBJW&id=77C4E0597612A88328D0EF755CE37A6603898FFC&thid=OIP.H6LkUBJWckDeEqnWYIjsQQHaE7&mediaurl=https%3a%2f%2fcdn.pergidulu.com%2fwp-content%2fuploads%2f2016%2f02%2fEmpal-H.-Apud-Cirebon-depan.jpg&exph=533&expw=800&q=empal+gentong+h.apud&simid=608004830793791023&FORM=IRPRST&ck=CC12755AEB6C61F5FC772B705AA77ECB&selectedIndex=0&ajaxhist=0&ajaxserp=0", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"}];
   getRecipes(String query) async {
     String url =
         "https://api.edamam.com/search?q=$query&app_id=ebb6041c&app_key=3c33ad913ab23b8554082bfb5fdd78b5";
