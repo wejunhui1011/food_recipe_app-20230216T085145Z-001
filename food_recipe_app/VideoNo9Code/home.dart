@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
   bool isLoading = true;
   List<RecipeModel> recipeList = <RecipeModel>[];
   TextEditingController searchController = new TextEditingController();
-  List reciptCatList = [{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"},{"imgUrl": "https://images.unsplash.com/photo-1593560704563-f176a2eb61db", "heading": "Chilli Food"}];
+  List reciptCatList = [{"imgUrl": "https://cdn.pergidulu.com/wp-content/uploads/2016/02/Empal-H.-Apud-Cirebon-depan.jpg", "heading": "Haji Apud Best Seller"}];
   getRecipes(String query) async {
     String url =
         "https://api.edamam.com/search?q=$query&app_id=ebb6041c&app_key=3c33ad913ab23b8554082bfb5fdd78b5";
@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
                                 "") {
                               print("Blank search");
                             } else {
-                             Navigator.push(context, MaterialPageRoute(builder: (context) => Search(searchController.text)));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Search(searchController.text)));
                             }
                           },
                           child: Container(
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                             controller: searchController,
                             decoration: InputDecoration(
                                 border: InputBorder.none,
-                                hintText: "Let's Cook Something!"),
+                                hintText: "Ayo Cobain Makanan Khas Cireboh !"),
                           ),
                         )
                       ],
@@ -127,14 +127,14 @@ class _HomeState extends State<Home> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "WHAT DO YOU WANT TO COOK TODAY?",
+                        "MAU MAKANAN KHAS CIREBON ?",
                         style: TextStyle(fontSize: 33, color: Colors.white),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       Text(
-                        "Let's Cook Something New!",
+                        "Ayo Sini Merapat !",
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       )
                     ],
