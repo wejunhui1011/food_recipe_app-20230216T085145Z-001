@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
@@ -45,7 +47,6 @@ class _SearchState extends State<Search> {
   }
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getRecipes(widget.query);
   }
