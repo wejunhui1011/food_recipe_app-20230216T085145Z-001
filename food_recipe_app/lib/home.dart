@@ -1,7 +1,8 @@
-// ignore_for_file: unused_element
+// ignore_for_file: unused_element, dead_code
 
 import 'dart:convert';
 import 'dart:developer';
+import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/RecipeView.dart';
 import 'package:food_recipe_app/model.dart';
@@ -136,7 +137,7 @@ class _HomeState extends State<Home> {
                         height: 10,
                       ),
                       Text(
-                        "Disini Ada Rekomendasi KUliner Cirebon !",
+                        "Disini Ada Rekomendasi Kuliner Cirebon!",
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       )
                     ],
@@ -276,5 +277,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     throw UnimplementedError();
+    Comment;
   }
 }
