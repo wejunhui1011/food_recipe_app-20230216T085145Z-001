@@ -9,6 +9,7 @@ import 'package:food_recipe_app/search.dart';
 import 'package:http/http.dart';
 
 class Home extends StatefulWidget {
+  const Home({Key?  key}) : super(key: key); 
   @override
   _HomeState createState() => _HomeState();
 }
