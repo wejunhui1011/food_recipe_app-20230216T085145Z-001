@@ -121,7 +121,7 @@ class _SearchState extends State<Search> {
 
                             decoration: InputDecoration(
                                 border: InputBorder.none,
-                                hintText: "Let's Cook Something!"),
+                                hintText: "Ayo Makan !"),
                           ),
                         )
                       ],

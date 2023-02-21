@@ -17,7 +17,7 @@ class _RecipeViewState extends State<RecipeView> {
   final Completer<WebViewController> controller = Completer<WebViewController>();
   @override
   void initState() {
-    if(widget.url.toString().contains("http://"))
+    if(widget.url.toString().contains("https://"))
       {
         finalUrl = widget.url.toString().replaceAll("http://", "https://");
       }
@@ -30,7 +30,7 @@ class _RecipeViewState extends State<RecipeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Food Recipe App"),
+        title: Text("Flutter Kuliner Cirebon"),
       ),
       body: Container(
         child: Webview(
