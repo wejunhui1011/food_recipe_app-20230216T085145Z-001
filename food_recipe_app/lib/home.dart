@@ -129,14 +129,14 @@ class _HomeState extends State<Home> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "WHAT DO YOU WANT TO COOK TODAY?",
+                        "Mau Makan Apa Hari Ini ?",
                         style: TextStyle(fontSize: 33, color: Colors.white),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       Text(
-                        "Let's Cook Something New!",
+                        "Disini Ada Rekomendasi KUliner Cirebon !",
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       )
                     ],
