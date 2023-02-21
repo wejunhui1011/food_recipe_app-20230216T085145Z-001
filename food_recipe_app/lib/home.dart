@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
   }
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       body: Stack(
         children: [
@@ -243,10 +244,11 @@ class _HomeState extends State<Home> {
                                           bottom: 0,
                                           top: 0,
                                           child: Container(
+                                            color :Colors.black26,
+                                            decoration: BoxDecoration(),
                                               padding: EdgeInsets.symmetric(
                                                   vertical: 5, horizontal: 10),
-                                              decoration: BoxDecoration(
-                                                  color: Colors.black26),
+                                              
                                               child: Column(
                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                 children: [
